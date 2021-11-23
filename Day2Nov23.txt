@@ -1,0 +1,296 @@
+2.Program to Round a Number to n Decimal Places/////Input....1.34678----OutPut.....1.35
+package com.example;
+import java.util.Scanner;
+public class RoundingOff
+{  
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);  
+        System.out.println("Enter number: ");  
+        double n= sc.nextDouble();
+        System.out.format("\n after rounding : %.6f", n);
+    }
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+4.Program to  find common elements in three arrays which are sorted? 
+
+Examples: input1 = {​​​​​12, 35, 310, 120, 640, 180}​​​​​
+
+input2 = {​​​​​656, 327, 120, 180, 5600}​​​​​
+
+input3 = {​​​​​33, 44, 515, 120, 330, 770, 180, 1120}​​​​​
+
+Output: 120, 180
+
+
+
+package com.example;
+
+
+public class CommonArrayElement {
+	
+	public static void main(String args[])
+	{
+	
+		int ar1[] = {1, 5, 10, 20, 40, 80};
+		int ar2[] = {6, 7, 20, 80, 100};
+		int ar3[] = {3, 4, 15, 20, 30, 70, 80, 120};
+		int i = 0, j = 0, k = 0;
+
+			
+			while (i < ar1.length && j < ar2.length && k < ar3.length)
+			{
+				
+				if (ar1[i] == ar2[j] && ar2[j] == ar3[k])
+				{ System.out.print(ar1[i]+" "); i++; j++; k++; }
+
+				
+				else if (ar1[i] < ar2[j])
+					i++;
+
+				
+				else if (ar2[j] < ar3[k])
+					j++;
+
+				
+				else
+					k++;
+			}
+		
+			System.out.print("are Common elements");
+	}
+}
+---------------------------------------------------------------------------------------------------------------------------------------
+5.find the sum of array elements which repeating 5 times in given 20 elements array?
+
+
+package com.example;
+
+
+public class SumofRepeatingElement {
+	public static void main(String args[]) {
+		int arr[]= {1,2,3,4,5,6,7,4,45,6,4,64,44,4,54,3,4,5,4,45,4,6,7,8,9,0};
+		int i=0,z=4,count=0,sum=0;
+		for(;i<arr.length;i++)
+		{
+			if(arr[i]==z)
+			{
+				count++;
+				sum = sum+arr[i];
+			}
+					
+		}
+		System.out.println(z+" is repated for "+count+" times in a given array");
+		System.out.println("Sum of repeating number "+z+" is "+sum);
+		
+	}
+
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------		
+
+1.write a program to find sum of the smallest and highest prime number in a given range?
+
+package com.example;
+
+public class SumofPrime {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int count=0,a=0,b=0;
+		for(int i=2;(i<=100);i++) {
+		if( isPrime(i) == true)
+		{
+		count++;
+		System.out.println(i+ " ");
+			if(count==1) {
+				a=i;				
+			}
+			if(count==25) {
+				b=i;
+			}
+
+		}
+		
+		}
+		int c= a+b;
+		System.out.println(c);
+
+			System.out.println("Sum of first and last prime number is:"+c);
+
+		}
+
+
+		static boolean isPrime(int n){
+
+
+
+		boolean res = false;
+		int i;
+		for(i=2;(i<=n/2) && (n % i != 0);i++);
+
+
+
+		if(i>n/2) {
+		res = true;
+		}
+		return res;
+		}
+
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+BANK EXAMPLE
+
+package com.torryharris.lab;
+ 
+public interface Bank {
+
+    void withDraw(int amount);
+    void deposit(int amount);
+    void showBalance();
+ 
+}
+-----------------------------------
+package com.torryharris.lab;
+ 
+public class SBIBank implements Bank {
+
+    private int balance;
+
+    SBIBank(int amount){
+        this.balance = amount;
+
+    }
+ 
+    @Override
+    public void withDraw(int amount) {
+        if(amount < balance)
+            balance = balance - amount;
+            else System.out.println("From SBIBank......InSufficient Funds");
+    }
+ 
+    @Override
+    public void deposit(int amount) {
+        if(amount < 50000)
+        balance = balance + amount;
+        else System.out.println("From SBIBank...... Not possible to depost");
+    }
+ 
+    @Override
+    public void showBalance() {
+        System.out.println("From SBIBank...... Availiable Balance ...."+balance);
+    }
+
+    public void licPolicy() {
+        System.out.println("From SBIBank......licPolicy");
+    }
+ 
+}
+-------------------------------------------------------------------------------------------
+package com.torryharris.lab;
+ 
+public class AXISBank implements Bank {
+
+    private int balance;
+
+    AXISBank(int amount){
+        this.balance = amount;
+
+    }
+ 
+    @Override
+    public void withDraw(int amount) {
+        if(amount < balance)
+            balance = balance - amount;
+            else System.out.println("From AXISBank......InSufficient Funds");
+    }
+ 
+    @Override
+    public void deposit(int amount) {
+        if(amount < 200000)
+        balance = balance + amount;
+        else System.out.println("From AXISBank...... Not possible to depost");
+    }
+ 
+    @Override
+    public void showBalance() {
+        System.out.println("From AXISBank...... Availiable Balance ...."+balance);
+    }
+ 
+}
+---------------------------------------------------------------------------------------
+package com.torryharris.lab;
+ 
+public class MainBank {
+ 
+    public static void main(String[] args) {
+
+    /*SBIBank sbiBank = new SBIBank(15000);
+    AXISBank aXISBank = new AXISBank(35000);
+
+    sbiBank.showBalance();
+    aXISBank.showBalance();
+
+    sbiBank.deposit(25000);
+    sbiBank.withDraw(15000);
+    sbiBank.showBalance();
+
+    sbiBank.withDraw(55000);*/
+
+
+    //Bank bank;
+
+    SBIBank bank = new SBIBank(15000);
+
+    bank.licPolicy();
+
+    bank.showBalance();
+
+    //bank = new AXISBank(35000);
+
+    //bank.showBalance();
+
+
+
+    }
+ 
+}
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+3.Write a program to display a number whose digits are 3 greater than the corresponding digits of the number TAKEN.
+
+
+For example, if the number is 5696, then output should be 8919
+
+package com.example;
+
+import java.util.Scanner;
+
+public class AddingDigit {
+	public static void main(String args[]) {
+		Scanner sc=new Scanner(System.in);
+		int  n,a;
+		System.out.println("Enter a four digit number:");
+		a=sc.nextInt();
+		
+	    int first  = a/1000+3;
+	    
+	    int b = a%1000;
+	    int second = b/100+3;
+	    
+	    int c = b%100;
+	    int d = c/10+3;
+	    int third = d/10;
+	    
+	    int e = c%10;
+	    int fourth = e+3;
+	    n = (first * 1000) + (second * 100) + (third * 10) + fourth;
+	    System.out.println("Number after adding 3 to each digit in a number:"+n);
+	   
+	
+	}
+
+}
