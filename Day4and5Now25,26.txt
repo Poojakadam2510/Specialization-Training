@@ -1,0 +1,1369 @@
+1>  * 
+   * * 
+  * * * 
+ * * * * 
+* * * * *
+
+package com.example3;
+
+public class Pattern1 {
+	public static void main(String args[]) {
+		/*
+		 *        
+		 *                   * 
+		 		    * * 
+		 		   * * * 
+		 		  * * * * 
+		 		 * * * * * 
+		 		* * * * * * 
+
+		 	 
+ */
+		int i, j, row = 5;       
+		 
+		for (i=0; i<row; i++)   
+		{  
+		   
+		for (j=row-i; j>1; j--)   
+		{  
+		
+		System.out.print(" ");   
+		}   
+		
+		for (j=0; j<=i; j++ )   
+		{   
+		     
+		System.out.print("* ");   
+		}   
+		
+		System.out.println();   
+		}   
+		} 
+	     
+
+}
+
+ 
+
+2>
+*
+* *
+* * *
+* * * *
+* * * * *
+
+package com.example3;
+
+public class Pattern2 {
+	public static void main(String args[]) {
+		/*
+		 *        
+		 *      *
+		  		* *
+		  		* * *
+		  		* * * *
+				* * * * *
+		 	 
+
+		 *   
+		 */
+		
+		 
+	        for (int i= 0; i<5; i++)
+	        {
+	            for (int j=0; j<=i; j++)
+	            {
+	          
+	                System.out.print("*");
+	            } 
+	                System.out.println("");
+	        }
+	}
+
+}
+;
+ 
+
+3>
+           * 
+         * * 
+       * * * 
+     * * * * 
+   * * * * *
+
+package com.example3;
+
+public class Pattern3 {
+	public static void main(String args[]) {
+		/*
+		 *        
+		 *         *
+		 		  **
+		 		 ***
+		 		****
+		 	   *****
+		 	 
+		 	 
+
+		 *   
+		 */
+		
+		   int rows = 4;
+	         
+	        for (int i= 0; i<= rows; i++)
+	        {
+	            for (int j=1; j<=rows-i; j++)
+	            {
+	                System.out.print(" ");
+	            }
+	            for (int k=0;k<=i;k++)
+	            {
+	                System.out.print("*");
+	            } 
+	                System.out.println("");
+	        }
+	}
+
+}
+
+4>
+ 
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
+
+package com.example3;
+
+public class Pattern4 {
+	public static void main(String args[])
+		{
+		int n, i, j, space = 1;
+		
+		n = 5;
+		space = n - 1;
+		for (j = 1; j<= n; j++)
+		{
+		for (i = 1; i<= space; i++)
+		{
+		System.out.print(" ");
+		}
+		space--;
+		for (i = 1; i <= 2 * j - 1; i++)
+		{
+		System.out.print("*");
+		}
+		System.out.println("");
+		}
+		space = 1;
+		for (j = 1; j<= n - 1; j++)
+		{
+		for (i = 1; i<= space; i++)
+		{
+		System.out.print(" ");
+		}
+		space++;
+		for (i = 1; i<= 2 * (n - j) - 1; i++)
+		{
+		System.out.print("*");
+		}
+		System.out.println("");
+		}
+		}
+
+}
+
+
+5>
+* * * * * 
+* * * * 
+* * * 
+* * 
+*
+
+package com.example3;
+
+public class Pattern5 {
+	public static void main(String args[]) {
+		/*
+		 *   	 *****
+		 	 ****
+		 	 ***
+		 	 **
+		 	 *
+		 *   
+		 */
+		
+		for(int i=0;i<5;i++) {
+			for(int j=i;j<5;j++) {
+				System.out.print("*");
+			}
+			System.out.print("\n");
+		}
+	}
+
+}
+ 
+6>
+     *
+    **
+   ***
+  ****
+ *****
+******
+
+package com.example3;
+
+public class Pattern6 {
+	public static void main(String args[]) {
+		/*
+		 *        
+		 *         *
+		 		  **
+		 		 ***
+		 		****
+		 	   *****
+		 	  ******
+		 	 *******
+
+		 *   
+		 */
+		
+		   int rows = 6;
+	         
+	        for (int i= 0; i<= rows; i++)
+	        {
+	            for (int j=1; j<=rows-i; j++)
+	            {
+	                System.out.print(" ");
+	            }
+	            for (int k=0;k<=i;k++)
+	            {
+	                System.out.print("*");
+	            } 
+	                System.out.println("");
+	        }
+	}
+
+}
+
+ 
+7>
+* * * * * 
+  * * * * 
+   * * * 
+    * * 
+     *
+
+package com.example3;
+
+public class Pattern7 {
+
+	public static void main(String[] args) {
+		int rows=5;
+		 for (int i= 0; i<= rows-1 ; i++)
+		    {
+		        for (int j=0; j<=i; j++)
+		        {
+		            System.out.print(" ");
+		        }
+		        for (int k=0; k<=rows-1-i; k++)
+		        {
+		            System.out.print("*" + " ");
+		        }
+		        System.out.println();
+		    }
+	}
+
+}
+
+ 
+8>
+*****
+ ****
+  ***
+   **
+    *
+
+package com.example3;
+
+public class Pattern8 {
+
+	public static void main(String args[]) {
+		/*
+		 *   
+		 *      *****
+		 		 ****
+		 		  ***
+		 		   **
+		 		    *
+		 *   
+		 */
+		
+		for(int i=0;i<5;i++) {
+			if(i==0) {
+				for(int j=i;j<5;j++) {
+					System.out.print("*");
+				}
+				System.out.print("\n");
+			}
+			else if(i==1) {
+				System.out.print(" ");
+				for(int j=i;j<5;j++) {
+					System.out.print("*");
+				}
+				
+				System.out.print("\n");
+			
+			}
+			else if(i==1){
+				System.out.print("  ");
+				for(int j=i;j<5;j++) {
+					System.out.print("*");
+				}
+				
+				System.out.print("\n");
+				
+			}
+			else if(i==2){
+				System.out.print("  ");
+				for(int j=i;j<5;j++) {
+					
+					System.out.print("*");
+				}
+				System.out.print("\n");
+	
+			}
+			else if(i==3){
+				System.out.print("   ");
+				for(int j=i;j<5;j++) {
+					
+					System.out.print("*");
+				}
+				System.out.print("\n");
+	
+			}
+			else{
+				System.out.print("    ");
+				for(int j=i;j<5;j++) {
+					System.out.print("*");
+				}
+				
+				System.out.print("\n");
+				
+			}
+		}
+	}
+}
+
+
+
+9>
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+ 
+package com.example3;
+
+public class Pattern9 {
+	public static void main(String args[]) {
+		/*
+		 *        
+		 *      *
+		  		* *
+		  		* * *
+		  		* * * *
+				* * * * *
+				* * * *
+				* * *
+				* *
+				* 
+
+		 	 
+
+		 *   
+		 */
+		
+		 
+	        for (int i= 0; i<5; i++)
+	        {
+	            for (int j=0; j<=i; j++)
+	            {
+	          
+	                System.out.print("*");
+	            } 
+	                System.out.println("");
+	        }
+	        for(int i=0;i<4;i++) {
+				for(int j=i;j<4;j++) {
+					System.out.print("*");
+				}
+				System.out.print("\n");
+			}
+	}
+
+}
+
+
+10>
+ 
+    *
+   **
+  ***
+ ****
+*****
+ ****
+  ***
+   **
+    *
+
+package com.example3;
+
+public class Pattern10 {
+	public static void main(String args[]) {
+		/*
+		 *        
+		 *         *
+		 		  **
+		 		 ***
+		 		****
+		 	   *****
+		 	   	****
+		 	   	 ***
+		 	   	  **
+		 	   	   *
+		 *   
+		 */
+		
+		   int rows = 4;
+	         
+	        for (int i= 0; i<= rows; i++)
+	        {
+	            for (int j=1; j<=rows-i; j++)
+	            {
+	                System.out.print(" ");
+	            }
+	            for (int k=0;k<=i;k++)
+	            {
+	                System.out.print("*");
+	            } 
+	                System.out.println("");
+	        }
+	        for(int i=0;i<4;i++) {
+				if(i==0) {
+					System.out.print(" ");
+					for(int j=i;j<4;j++) {
+						System.out.print("*");
+					}
+					System.out.print("\n");
+				}
+				else if(i==1) {
+					System.out.print("  ");
+					for(int j=i;j<4;j++) {
+						System.out.print("*");
+					}
+					
+					System.out.print("\n");
+				
+				}
+				else if(i==1){
+					System.out.print("   ");
+					for(int j=i;j<4;j++) {
+						System.out.print("*");
+					}
+					
+					System.out.print("\n");
+					
+				}
+				else if(i==2){
+					System.out.print("   ");
+					for(int j=i;j<4;j++) {
+						
+						System.out.print("*");
+					}
+					System.out.print("\n");
+		
+				}
+				else
+				{
+					System.out.print("    ");
+					System.out.print("*");
+				}
+				
+			}
+		}
+	}
+
+
+
+
+
+11>
+ 
+* * * * * 
+ * * * * 
+  * * * 
+   * * 
+    * 
+    * 
+   * * 
+  * * * 
+ * * * * 
+* * * * *
+
+package com.example3;
+
+
+	public class Pattern11 {
+
+		public static void main(String[] args) {
+			int rows=5;
+			 for (int i= 0; i<= rows-1 ; i++)
+			    {
+			        for (int j=0; j<=i; j++)
+			        {
+			            System.out.print(" ");
+			        }
+			        for (int k=0; k<=rows-1-i; k++)
+			        {
+			            System.out.print("*" + " ");
+			        }
+			        System.out.println();
+			    }
+
+				int i, j, row = 6;       
+				 
+				for (i=0; i<row; i++)   
+				{  
+				   
+				for (j=row-i; j>1; j--)   
+				{  
+				
+				System.out.print(" ");   
+				}   
+				
+				for (j=0; j<=i; j++ )   
+				{   
+				     
+				System.out.print("* ");   
+				}   
+				
+				System.out.println();   
+				}   
+				} 
+			     
+
+
+
+}
+
+
+
+
+
+ 
+12>
+ 
+    *
+   * *
+  *   *
+ *     *
+*********
+ 
+package com.example3;
+
+public class Pattern12 {
+	public static void main(String args[]) {
+		 int rows = 5;
+         
+         for (int i=1; i<= rows ; i++)
+         {
+             for (int j = i; j < rows ; j++) {
+                 System.out.print(" ");
+             }   
+             for (int k = 1; k <= (2*i -1) ;k++) {
+                 if( k==1 || i == rows || k==(2*i-1)) {
+                     System.out.print("*");
+                 }
+                 else {
+                     System.out.print(" ");
+                 }
+             }
+             System.out.println("");
+         }
+	}
+
+}
+
+
+
+13>
+ 
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5
+
+package com.example3;
+
+public class Pattern13 {
+	public static void main(String args[]) {
+
+	  for (int i= 0; i<=5; i++)
+      {
+          for (int j=1; j<=i; j++)
+          {
+        
+              System.out.print(j);
+          } 
+              System.out.println("");
+      }
+	}
+}
+
+ 
+14>
+ 
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+11 12 13 14 15
+
+package com.example3;
+
+public class Pattern14 {
+	 public static void main(String[] args) {
+         int i, j, k = 1;
+         for (i = 1; i <= 5; i++) {
+             for (j = 1; j< i + 1; j++) {
+                 System.out.print(k++ + " ");
+             }
+    
+             System.out.println();
+         }
+     }
+
+}
+
+ 
+15>
+ 
+             1
+           1   1
+         1   2   1
+       1   3   3   1
+     1   4   6   4   1
+16>
+ 
+   1
+  212
+ 32123
+4321234
+ 32123
+  212
+   1
+
+ 17>
+
+1 
+2 2 
+3 3 3 
+4 4 4 4 
+5 5 5 5 5
+ 
+package com.example3;
+
+public class Pattern17 {
+
+	public static void main(String args[]) {
+		
+		 
+	        for (int i= 0; i<5; i++)
+	        {
+	            for (int j=0; j<=i; j++)
+	            {
+	          
+	                System.out.print(i+1);
+	            } 
+	                System.out.println("");
+	        }
+	}
+
+
+}
+
+
+18>
+5 
+5 4 
+5 4 3 
+5 4 3 2 
+5 4 3 2 1
+
+
+package com.example3;
+
+	public class Pattern18 {
+
+		public static void main(String args[]) {
+			
+			 
+		        for (int i= 5; i>0; i--)
+		        {
+		            for (int j=5; j>=i; j--)
+		            {
+		          
+		                System.out.print(j);
+		            } 
+		                System.out.println("");
+		        }
+		}
+
+
+	}
+
+
+
+ 
+19>
+1 
+2 1 
+3 2 1 
+4 3 2 1 
+5 4 3 2 1
+
+package com.example3;
+
+public class Pattern19 {
+
+	public static void main(String args[]) {
+		
+		 
+	        for (int i= 1; i<6; i++)
+	        {
+	            for (int j=1; j<=i; j++)
+	            {
+	            	int a=(i-j);
+	            	if(a==0) {
+	            		break;
+	            	}
+	                System.out.print(i-j);
+	            	
+	            } 
+	                System.out.println("");
+	        }
+	}
+
+
+}
+
+ 
+20>
+10101
+01010
+10101
+01010
+10101
+
+package com.example3;
+
+public class Pattern20 {
+	public static void main(String args[]) {
+
+		  for (int i= 1; i<=5; i++)
+	      {
+	          for (int j=1; j<=5; j++)
+	          {
+	        	  if((i+j)%2==0) {
+	        		  System.out.print("1"); 
+	        	  }
+	        	  else {
+	        		  System.out.print("0"); 
+	        	  }
+	          } 
+	              System.out.println("");
+	      }
+		}
+}
+
+ 
+21>
+1
+10
+101
+1010
+10101
+
+package com.example3;
+
+public class Pattern21 {
+	public static void main(String args[]) {
+		 for (int i = 1; i <= 5; i++) 
+	        {
+	            for (int j = 1; j <= i; j++)
+	            {
+	                if(j%2 == 0)
+	                {
+	                    System.out.print(0);
+	                }
+	                else
+	                {
+	                    System.out.print(1);
+	                }
+	            }
+	              
+	            System.out.println();
+	        }
+	}
+
+}
+
+ 
+22>
+1 2 3 4 5 
+ 2 3 4 5 
+  3 4 5 
+   4 5 
+    5 
+   4 5 
+  3 4 5 
+ 2 3 4 5 
+1 2 3 4 5
+ 
+23>
+A 
+A B 
+A B C 
+A B C D 
+A B C D E 
+A B C D E F
+
+package com.example3;
+
+
+
+	public class Pattern23 {
+
+		public static void main(String args[]) {
+			
+			 for (int i= 1; i<7; i++)
+		        {
+		            for (int j=1; j<=i; j++)
+		            {
+		          
+		                System.out.print((char)(j+64));
+		            } 
+		                System.out.println("");
+		        }
+		}
+
+
+	}
+
+
+Student crud operation
+________________________________________________________________________
+
+Student class
+package StudentAssignment;
+
+public class Student {
+	private String StudentName;
+
+	private int rollno;
+
+	private String dept;
+
+	private int marks;
+	
+	public Student() {
+	}
+	
+
+	public Student(String studentName, int rollno, String dept, int marks) {
+		super();
+		StudentName = studentName;
+		this.rollno = rollno;
+		this.dept = dept;
+		this.marks = marks;
+	}
+
+	public String getStudentName() {
+		return StudentName;
+	}
+
+	public void setStudentName(String studentName) {
+		StudentName = studentName;
+	}
+
+	public int getRollno() {
+		return rollno;
+	}
+
+	public void setRollno(int rollno) {
+		this.rollno = rollno;
+	}
+
+	public String getDept() {
+		return dept;
+	}
+
+	public void setDept(String dept) {
+		this.dept = dept;
+	}
+
+	public int getMarks() {
+		return marks;
+	}
+
+	public void setMarks(int marks) {
+		this.marks = marks;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [StudentName=" + StudentName + ", rollno=" + rollno + ", dept=" + dept + ", marks=" + marks
+				+ "]";
+	}
+	
+	
+
+}
+---------------------------------------------------------------------------------------------------------------------------------------------
+StudentMenu class
+______________________________________________________________
+package StudentAssignment;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.Scanner;
+
+import com.example3.Emp;
+
+public class StudentMenu {
+
+	static Scanner scanner = new Scanner(System.in);
+	static Scanner sc = new Scanner(System.in);
+
+	static List<Student> studList = new ArrayList<Student>();
+	
+	public static void main(String[] args) {
+
+	
+
+	int choice=0;
+	
+	
+	do{
+		System.out.println("Menu");
+
+		System.out.println("1.Create");
+
+		System.out.println("2.Search");
+
+		System.out.println("3.Update");
+
+		System.out.println("4.Delete");
+
+		System.out.println("5.DisplayData");
+
+		System.out.println("Exit(press -1)");
+
+		System.out.println("Please chose your choice");
+
+		choice = scanner.nextInt();
+
+		switch(choice){
+		case 1:
+
+			readstudData();
+
+			break;
+		case 2:
+
+			searchstudData();
+
+			break;
+		case 3:
+			
+			updatestuddata();
+			break;
+			
+		case 4:
+			 deletestuddata();
+			 break;
+
+		case 5 : 
+			System.out.println(studList);
+				break;
+
+			}
+		}
+	while(choice != -1);
+
+	System.out.println("Program ends");
+
+	
+}
+
+	private static void readstudData() {
+	System.out.println("enter Student Name");
+
+	String name = scanner.next();
+
+	System.out.println("enter Roll No");
+
+	int id = scanner.nextInt();
+
+	System.out.println("enter Student Dept");
+
+	String dept = scanner.next();
+
+	System.out.println("enter student marks");
+
+	int mark = scanner.nextInt();
+
+	Student newstud = new Student(name,id,dept,mark);
+
+	studList.add(newstud);
+	}
+	
+	private static void searchstudData() {
+		boolean found = false;
+		System.out.println("Enter roll no to search:");
+		int a=scanner.nextInt();
+		Iterator<Student> i= studList.iterator();
+		while(i.hasNext()) {
+			Student studList=i.next();
+			if(studList.getRollno() == a) {
+				System.out.println(studList);
+				found=true;
+			}
+		}
+		if(!found) {
+			System.out.println("Record not found");
+		}
+	}
+	private static void updatestuddata() {
+		boolean found = false;
+		System.out.println("Enter roll no to Update:");
+		int c=scanner.nextInt();
+		ListIterator<Student> li= studList.listIterator();
+		while(li.hasNext()) {
+			Student studList=li.next();
+			if(studList.getRollno() == c) {
+				System.out.println("Enter new Student's name:");
+				String name = sc.nextLine();
+				System.out.println("Enter new Student's Roll no:");
+				int no = scanner.nextInt();
+				System.out.println("Enter new Student's dept name:");
+				String dept = sc.nextLine();
+				System.out.println("Enter new Student's Marks:");
+				int mark = scanner.nextInt();
+				li.set(new Student(name,no,dept,mark));
+				found=true;
+			}
+		}
+		if(!found) {
+			System.out.println("Record not found");
+		}else {
+			System.out.println("Record is updated Successfully:");
+		}
+	}
+	
+	private static void  deletestuddata() {
+		
+		boolean found = false;
+		System.out.println("Enter roll no to Delete:");
+		int b=scanner.nextInt();
+		Iterator<Student> i= studList.iterator();
+		while(i.hasNext()) {
+			Student studList=i.next();
+			if(studList.getRollno() == b) {
+				System.out.println(studList);
+				i.remove();
+				found=true;
+			}
+		}
+		if(!found) {
+			System.out.println("Record not found");
+		}
+		else {
+			System.out.println("Record id Deleted Successfully");
+		}
+	}
+	
+}
+-------------------------------------------------------------------------------------
+Emp Crud operations
+_____________________________________\
+Emp class
+package com.example3;
+
+	public class Emp {
+		private String empName;
+
+		private int empId;
+
+		private String dept;
+
+		private float salary;
+
+		public Emp() {
+			
+		}
+		public Emp(String empName, int empId, String dept, float salary) {
+			super();
+
+		this.empName = empName;
+
+		this.empId = empId;
+
+		this.dept = dept;
+
+		this.salary = salary;
+		}
+
+		public Emp(String empName , int empId, Emp emp) {
+		this.empName = empName;
+
+		this.empId = empId;
+
+		this.dept = emp.dept;
+
+		this.salary = emp.salary;
+		}
+		@Override
+
+public String toString() {
+			return "\n\nEmp [empName=" + empName + ", empId=" + empId + ", dept=" + dept + ", salary=" + salary + "]";
+			}
+		public String getEmpName() {
+			return empName;
+			}
+		public void setEmpName(String empName) {
+			this.empName = empName;
+			}
+		public int getEmpId() {
+			return empId;
+			}
+		public void setEmpId(int empId) {
+			this.empId = empId;
+			}
+		public String getDept() {
+			return dept;
+			}
+	public void setDept(String dept) {
+			this.dept = dept;
+			}
+		public float getSalary() {
+			return salary;
+			}
+public void setSalary(float salary) {
+			this.salary = salary;}
+}
+	
+----------------------------------------------------------------------------------------------------------
+EmpMenu Class
+_____________________________________________
+package com.example3;
+
+
+	import java.util.ArrayList;
+
+	import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.Scanner;
+
+import StudentAssignment.Student;
+	public class EmpMenu {
+		static Scanner scanner = new Scanner(System.in);
+		static Scanner sc = new Scanner(System.in);
+
+		static List<Emp> empList = new ArrayList<Emp>();
+		
+	public static void main(String[] args) {
+
+		
+
+		int choice=0;
+
+		do {
+			System.out.println("Menu");
+
+			System.out.println("1.Create");
+
+			System.out.println("2.Search");
+
+			System.out.println("3.Update");
+			System.out.println("4.Delete");
+
+			System.out.println("5.DisplayData");
+
+			System.out.println("Exit(press -1)");
+
+			System.out.println("Please chose your choice");
+
+			choice = scanner.nextInt();
+
+			switch(choice){
+			case 1:
+
+				readEmpData();
+
+				break;
+			case 2:
+				
+				searchempData();
+				break;
+				
+			case 3:
+				
+				updateempdata();
+				break;
+				
+			case 4:
+				
+				deleteempdata();
+				break;
+
+			case 5 : 
+				System.out.println(empList);
+					break;
+
+				}
+			}while(choice != -1);
+
+		System.out.println("Program ends");
+	}
+
+   private static void readEmpData(){
+	 System.out.println("enter Emp Name");
+		String name = scanner.next();
+		System.out.println("enter Emp ID");
+
+		int id = scanner.nextInt();
+
+		System.out.println("enter Emp Dept");
+
+		String dept = scanner.next();
+
+		System.out.println("enter Emp Salary");
+
+		float salary = scanner.nextFloat();
+
+		Emp newEmp = new Emp(name,id,dept,salary);
+
+		empList.add(newEmp);
+ 	}
+   private static void searchempData() {
+		boolean found = false;
+		System.out.println("Enter Emp's ID to search:");
+		int a=scanner.nextInt();
+		Iterator<Emp> i= empList.iterator();
+		while(i.hasNext()) {
+			Emp empList=i.next();
+			if(empList.getEmpId() == a) {
+				System.out.println(empList);
+				found=true;
+			}
+		}
+		if(!found) {
+			System.out.println("Record not found");
+		}
+	}
+   private static void updateempdata() {
+		boolean found = false;
+		System.out.println("Enter Emp's ID to Update:");
+		int c=scanner.nextInt();
+		ListIterator<Emp> li= empList.listIterator();
+		while(li.hasNext()) {
+			Emp empList=li.next();
+			if(empList.getEmpId() == c) {
+				System.out.println("Enter new Emp's name:");
+				String name = sc.nextLine();
+				System.out.println("Enter new Emp's ID:");
+				int no = scanner.nextInt();
+				System.out.println("Enter new Emp's dept:");
+				String dept = sc.nextLine();
+				System.out.println("Enter new Emp's Salary:");
+				int mark = scanner.nextInt();
+				li.set(new Emp(name,no,dept,mark));
+				found=true;
+			}
+		}
+		if(!found) {
+			System.out.println("Record not found");
+		}else {
+			System.out.println("Record is updated Successfully:");
+		}
+	}
+	
+	private static void  deleteempdata() {
+		
+		boolean found = false;
+		System.out.println("Enter Emp Id to Delete:");
+		int b=scanner.nextInt();
+		Iterator<Emp> i= empList.iterator();
+		while(i.hasNext()) {
+			Emp empList=i.next();
+			if(empList.getEmpId() == b) {
+				System.out.println(empList);
+				i.remove();
+				found=true;
+			}
+		}
+		if(!found) {
+			System.out.println("Record not found");
+		}
+		else {
+			System.out.println("Record id Deleted Successfully");
+		}
+	}
+	
+}
+ -------------------------------------------------------------------------------
+Number to World example
+__________________________________
+package com.example3;
+
+import java.util.Scanner;
+
+public class NumberToWorld {
+	public static void main(String args[]) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter number upto one digits:");
+		int n=sc.nextInt();
+		int c=n;
+		int a=n/10;int b=n%10;
+		String[] single_digits = new String[]{"zero","one","two","three","four","five", "six","seven","eight","nine"};
+        //String[] two_digits = new String[]{"","ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen", "nineteen"};
+        if(a==0)
+        {
+            System.out.println(single_digits[c]);
+        }
+        else 
+
+            System.out.println("You have entered a wrong number:");
+	}
+	
+}
+----------------------------------------------------------------------------------------------------
