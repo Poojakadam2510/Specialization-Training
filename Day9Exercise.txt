@@ -1,0 +1,149 @@
+
+Problem 1
+
+package Day9;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+
+public class Exercise1 {
+	public static void main(String[] args) {
+        List<String> users = new ArrayList<>();
+       // List<Integer> Numbers = new ArrayList<>(Numbers);
+        users.add("one");
+        users.add("two");
+        users.add("three");
+        users.add("four");
+        System.out.println(users);
+	}
+        
+
+}
+-----------------------------------------------------------------------------
+
+Problem 2
+
+package Day9;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Exercise2 {
+	
+		public static void main(String[] args) {
+		List<String> list1 = new ArrayList<String>();//line 1
+		List<Object> list2 = list1;//line 2
+		list2.add(new Integer(12));//line 3
+		System.out.println(list2.size());//line 4
+		}
+		}
+
+//OUTPUT WILL BE:Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+//Type mismatch: cannot convert from List<String> to List<Object>
+
+//at Hello/Day9.Exercise2.main(Exercise2.java:10)
+
+----------------------------------------------------------------------------------
+
+Problem 3
+
+package Day9;
+
+import java.util.*;
+
+public class Exercise3 {
+	
+	
+	public static void main(String s[ ]){
+	List<String> list=new ArrayList<String>( );
+	list.add("one");
+	list.add(2);
+	System.out.println(list.get(0).length(); 
+	}
+} 
+
+
+//Output of the Program will be:Exception in thread "main" java.lang.Error: Unresolved compilation problems: 
+//The method add(int, String) in the type List<String> is not applicable for the arguments (int)
+//Syntax error, insert ")" to complete Expression
+//
+//at Hello/Day9.Exercise3.main(Exercise3.java:11)
+
+-----------------------------------------------------------------
+
+Problem 4
+
+package Day9;
+
+import java.util.HashSet;
+
+public class Exercise4 {
+
+	 public static void main(String[] args){
+		 Integer a = new Integer(4);
+		 Integer b = new Integer(8);
+		 Integer c = new Integer(4);
+		 HashSet hs = new HashSet();
+		 hs.add(a);
+		 hs.add(b);
+		 hs.add(c);
+		 System.out.println(hs);
+	 }
+	
+}
+//Output will be:[4, 8]
+-------------------------------------------------------------------------------
+
+Problem 5
+
+package Day9;
+import java.util.ArrayList;
+
+public class Exercise5 {
+	
+		
+		public static void removeElement(ArrayList<String> list1, ArrayList<String> list2) {
+			System.out.println("ArayList1: " + list1);
+			System.out.println("ArayList2: " + list2);
+			System.out.println("Size of ArrayList1 = "
+							+ list1.size());
+			
+			list2=list1;
+			
+			list1.clear();
+
+			
+			System.out.println("\nAfter clear\n\n"
+							+ "ArrayList1: " + list1);
+
+			
+			System.out.println("Size of ArrayList1 = "
+							+ list1.size());
+			
+			System.out.println("ArayList2: " + list2);
+			
+			
+						
+		}
+	
+		public static void main(String[] args)
+		{
+			
+			ArrayList<String> list1 = new ArrayList<>();
+			//ArrayList<String> list2 = new ArrayList<>();
+
+			
+			list1.add("pooja");
+			list1.add("B.tech");
+			list1.add("kadam");
+			list1.add("happy");
+			
+			ArrayList<String> list2=list1;
+			removeElement(list1,list2);
+		
+
+		}
+	}
+-----------------------------------------------------
